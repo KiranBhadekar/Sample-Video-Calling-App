@@ -1,0 +1,18 @@
+<div class="card text-center">
+  <div class="card-header bg-info text-white">
+    Video Conference
+  </div>
+  <div class="card-body bg-light text-dark">
+    <h5 class="card-title">Enter Your Code to Join</h5>
+    <p class="card-text">Share the same code to the recipients to Join the video call</p>
+    <form class="joinForm" [formGroup]="joinRoomForm" (ngSubmit)="onSubmit(joinRoomForm.value)">
+  <div>
+    <input placeholder="room name" id="roomName" type="text" formControlName="roomName" align="center">
+  </div>
+  <button align="center" [disabled]="joinRoomForm.invalid" class="btn btn-primary" type="submit">Join</button>
+</form>
+  </div>
+  <div class="card-footer text-muted">
+   Fusionstak LLC
+  </div>
+</div>

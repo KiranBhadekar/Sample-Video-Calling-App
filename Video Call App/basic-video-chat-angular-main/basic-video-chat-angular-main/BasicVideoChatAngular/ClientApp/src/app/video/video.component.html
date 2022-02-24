@@ -1,0 +1,32 @@
+
+<div class="publishingDiv" [ngClass]="{'publishing': publishing}" #publisherDiv></div>
+<div>
+  <div style="position: absolute;">
+    <button align="center" class="btn btn-primary" (click)="endCall()">End</button>
+    <button *ngIf="!videoOff" (click)="offVideo($event)" style="margin-left: 8px;" class="btn btn-primary">
+       OFF Video
+    </button>
+    <button *ngIf="videoOff" class="btn btn-primary"  style="margin-left: 8px;" (click)="videoOn()">
+       ON Video
+    </button>
+    <button  *ngIf="!audioOff" (click)="offAudio()" style="margin-left: 8px;" type="button" class="btn btn-primary">
+       OFF Audio
+    </button>
+  <button *ngIf="audioOff" type="button" style="margin-left: 8px;" class="btn btn-primary" (click)="audioOn()">
+    ON Audio
+</button>
+<button  type="button" style="margin-left: 8px;" class="btn btn-primary" (click)="screenShare()">
+  Screen Share
+</button>
+  </div>
+  <ng-template #subscriberHost>
+   
+  </ng-template>
+
+</div>
+<div #screensharepreview>
+</div>
+
+
+
+
