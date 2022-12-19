@@ -24,7 +24,7 @@
     "@angular/platform-server": "8.2.12",
     "@angular/router": "8.2.12",
     "@nguniversal/module-map-ngfactory-loader": "8.1.1",
-    "@opentok/client": "2.17.0",
+    "@opentok/client": "2.24.1",
     "aspnet-prerendering": "^3.0.1",
     "bluebird": "3.7.2",
     "bootstrap": "^4.3.1",
